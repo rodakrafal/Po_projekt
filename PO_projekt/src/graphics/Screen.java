@@ -46,13 +46,6 @@ public class Screen {
 	}
 	
 	
-	public void frect(int px, int py, int h, int w, int color) {
-		for(int y=0 ; y<h; ++y)
-			for(int x=0; x<w ; ++x) {
-				pixel(x+px,y+py, color);
-			}
-	}
-	
 	private void pixel(int x, int y, int color) {
 		if(x<0 || x>=WIDTH || y<0 || y>= HEIGHT ||  color == 0xFFFF00FF) return;
 		
